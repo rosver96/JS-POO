@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+  <center>
+  <form id="task-form" class="form-control ps-5 pe-5">
+    <input class="form-control mt-5" type="text" id="task-name" placeholder="Pregunta" required>
+    <div class="row">
+        <div class="col-3">
+            <input class="form-control mt-5" type="text" id="task-opcion1" placeholder="Opcion A)" required>
+        </div>
+        <div class="col-3">
+            <input class="form-control mt-5" type="text" id="task-opcion2" placeholder="Opcion B)" required>
+        </div>
+        <div class="col-3">
+            <input class="form-control mt-5" type="text" id="task-opcion3" placeholder="Opcion C)" required>
+        </div>
+        <div class="col-3">
+            <input class="form-control mt-5" type="text" id="task-opcion4" placeholder="Opcion D)" required>
+        </div>
+    </div>
+    <input class="form-control mt-5" type="text" id="task-respuesta" placeholder="Respuesta Correcta" required>
+    <button class="btn btn-outline-success mt-3" type="submit">Agregar Pregunta</button>
+  </form>
+</center>
+
+  <ul id="task-list"></ul>
+  <script src="script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
