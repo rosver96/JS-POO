@@ -12,40 +12,42 @@
 <body>
     <div class="text-center">
         <div class="row">
+        <form id="formulario">
             <h2 style="margin-bottom: 3rem; text-align: center;  font-weight: 800; font-size: 3rem; ">♣ Quien Quiere Ser Millonario ♣</h2>
             <div class="mb-4">
                 <label for="" style="background-color: #212529; color: #fff;">Pregunta:</label>
-                <input type="text" >
+                <input type="text" id="preguntaH" >
             </div>
         <div>       
         <div class="row">
             <div class="mb-4">
                 <label  style="background-color: #212529; color: #fff;">Opcion A:</label>
-                <input type="text">
+                <input type="text" id="opcionA">
             </div>
         <div>       
         <div class="row">
             <div class="mb-4">
                 <label style="background-color: #2a2c30; color: #fff;">Opcion B:</label>
-                <input type="text">
+                <input type="text" id="opcionB">
             </div>
         <div> 
         <div class="row">
             <div class="mb-4">
                 <label style="background-color: #212529; color: #fff;">Opcion C:</label>
-                <input type="text">
+                <input type="text"  id="opcionC">
             </div>
         <div>
         <div class="row">
             <div class="mb-4">
                 <label style="background-color: #212529; color: #fff;">Opcion D:</label>
-                <input type="text">
+                <input type="text" id="opcionD">
             </div>
              <div>
+             </form>       
     </div>    
     
     <div class="text-center">
-        <input class="form-control selector" style="width: 30%; margin-left: 34%;" list="datalistOptions" placeholder="Elige Tu Respuesta...">
+        <input class="form-control selector" id="opccorrecta" style="width: 30%; margin-left: 34%;" list="datalistOptions" placeholder="Elige Tu Respuesta...">
         <datalist id="datalistOptions">
             <option value="Opcion A">
             <option value="Opcion B">
@@ -59,8 +61,9 @@
     </div>         
     
 
-    <ul id="task-list"></ul>
+    <div id="padrepreguntas">
 
+    </div>
 
 
 
