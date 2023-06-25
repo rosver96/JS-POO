@@ -10,5 +10,17 @@ body{
 }
 
 .form-check{
-    color: black;
+    color: white;
 }
+
+.card {
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+
+
