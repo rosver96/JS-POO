@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="carrito.png" type="image/x-icon">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="carrito.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="carrito.css">
+  <title>Carrito de Compras</title>
 </head>
 
 <body>
-    <h1>Carrito de compras</h1>
-  <input type="text" id="compraInput" placeholder="Nueva compra">
-  <input type="number" id="compra2" placeholder="precio">
-  <button onclick="carrito.agregarAlCarrito()">Agregar al carrito</button>
-  div.
-  <ul id="cartItems"></ul>
-
-
-
+  <div class="container">
+    <h1 class="mt-4"> Carrito de compras </h1>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <input type="text" id="compraInput" class="form-control" placeholder="Nueva compra">
+      </div>
+      <div class="col-md-3">
+        <input type="number" id="precioInput" class="form-control" placeholder="Precio">
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-primary" onclick="carrito.agregarAlCarrito()">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <strong style="font-size:35px;"> Carrito </strong>
+          </div>
+          <ul id="cartItems" class="list-group list-group-flush"></ul>
+          <div class="card-footer">
+            <strong>Total: $<span id="totalPrice">0</span></strong>
+          </div>
+        </div>
+        <button class="btn btn-danger mt-4" onclick="carrito.vaciarCarrito()">Vaciar carrito</button>
+      </div>
+    </div>
+  </div>
 
   <script src="carrito.js"></script>
-
 </body>
 </html>
