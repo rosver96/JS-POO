@@ -1,0 +1,11 @@
+*{
+    padding: 20px;
+    margin: 20px;
+    background-image: linear-gradient(to right, #302e30, #e9e0e5, #363232);
+    color:white;
+}
+
+.opt{
+    color: black;
+}
+
