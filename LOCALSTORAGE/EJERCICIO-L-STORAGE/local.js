@@ -1,7 +1,4 @@
 
-
-
-
 obtener_localstorage();
 
 // getitem traigo mi objeto o los datos, con el parse hago que se muestren bien el objeto con todos sus datos///

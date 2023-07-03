@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Videojuegos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./juego.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">VideoGames.Zeus♥</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Carrito</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- ****************************************************   carrusel img ******************************************************** -->
+<div id="hero-carousel" class="carousel slide" style="margin-top: -10rem;" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item"> 
+      <img src="./img/carrusel-1.jpg" class="d-block w-100 c-img" style="object-fit: cover; height: 800px;" alt="Slide 1">
+      <div class="carousel-caption top-0 mt-4">
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="./img/carrusel-2.jpg" class="d-block w-100 c-img" style="object-fit: cover; height: 800px;" alt="Slide 2">
+      <div class="carousel-caption top-0 mt-4">
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="./img/Resident.jpg" class="d-block w-100 c-img" style="object-fit: cover; height: 800px;" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <!-- cards videojuegos -->
+  <div class="container">
+    <!-- Lista de juegos -->
+    <div id="gameList">
+      <div class="row">
+        <!-- Game 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/good.jpg" class="card-img-top" alt="Game 1">
+            <div class="card-body">
+              <h5 class="card-title">Good Of War</h5>
+              <p class="card-text">Precio: $30</p>
+              <button class="btn btn-primary" onclick="addToCart('Game 1', 10)">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/crash.jpg" class="card-img-top" alt="Game 2">
+            <div class="card-body">
+              <h5 class="card-title">Crash Racing</h5>
+              <p class="card-text">Precio: $25</p>
+              <button class="btn btn-primary" onclick="addToCart('Game 2', 15)">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/days-gone.jpg" class="card-img-top" alt="Game 3">
+            <div class="card-body">
+              <h5 class="card-title">Days Gone</h5>
+              <p class="card-text">Precio: $50</p>
+              <button class="btn btn-primary" onclick="addToCart('Game 3', 15)">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/Resident.jpg" class="card-img-top" alt="Game 4">
+            <div class="card-body">
+              <h5 class="card-title">Resident Evild</h5>
+              <p class="card-text">Precio: $29</p>
+              <button class="btn btn-primary" onclick="addToCart('Game 4', 15)">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/uncharted.jpg" class="card-img-top" alt="Game 5">
+            <div class="card-body">
+              <h5 class="card-title">Uncharted 4</h5>
+              <p class="card-text">Precio: $28</p>
+              <button class="btn btn-primary" onclick="addToCart('Game 5', 15)">Añadir al carrito</button>
+           </div>
+          </div>
+        </div>
+        <!-- Game 6 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/image-7a02ca28492241e8937959a1bf.png" class="card-img-top" alt="Game 6">
+            <div class="card-body">
+              <h5 class="card-title">Jump Force</h5>
+              <p class="card-text">Precio: $40</p>
+              <button class="btn btn-primary" onclick="addToCart('Game 6', 15)">Añadir al carrito</button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carrito de compras -->
+    <div id="cart" class="card">
+      <div class="card-header">
+        <h5 class="card-title">Carrito De Compras</h5>
+      </div>
+      <div id="cartItems" class="card-body"></div>
+      <div id="cartSummary" class="card-footer"></div>
+      <div class="card-footer">
+        <button class="btn btn-danger" onclick="clearCart()">Vaciar Carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <span class="text-muted">Carrito de Compras - Videojuegos &copy; 2023</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
