@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #data-container {
+    margin-top: 5rem;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+.time{
+  margin: auto;
+  background-color: black;
+  width: 15%;
+  height: 300px;
+  color: white;
+}
