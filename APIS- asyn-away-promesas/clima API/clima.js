@@ -2,7 +2,7 @@ async function fetchData() {
     try {
     //   const response = await fetch('https://api.example.com/data');
     //const response = await fetch('https://pokeapi.co/api/v2/pokemon/ditto');
-    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=cucuta&units=metric&appid=6303eb0af53c3739b6586624f353c6a9");
+    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=bucaramanga&units=metric&appid=6303eb0af53c3739b6586624f353c6a9");
     
       const data = await response.json();
       return data;
@@ -12,6 +12,9 @@ async function fetchData() {
     }
     
   }
+
+
+  
   async function displayData() {
     try {
       const data = await fetchData();
@@ -25,8 +28,8 @@ async function fetchData() {
       </div>
       <p>${data.main.temp} ºC<p>
       <p>${data.weather[0].description}<p>
-      <p>💨 ${data.main.humidity} %</p>
-      <p>💧 ${data.main.humidity} %</p>
+      <p class="climate">💨 ${data.main.humidity} %</p>
+      <p class="climate">💧 ${data.main.humidity} %</p>
       <p>${data.name}<p>
       <p>${data.sys.country}<p>
       `
